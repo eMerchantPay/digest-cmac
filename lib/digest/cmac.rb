@@ -47,7 +47,7 @@ module Digest
       if @data.length == BLOCK_SIZE
         @data = xor(@data, @lu)
       else
-        @data << "\200" + ("\000" * (BLOCK_SIZE - @data.length - 1))
+        @data << "\200".force_encoding('ASCII-8BIT') + ("\000".force_encoding('ASCII-8BIT') * (BLOCK_SIZE - @data.length - 1))
         @data = xor(@data, @lu2)
       end
 
