@@ -1,6 +1,6 @@
 # Digest::Cmac
 
-Copied from https://github.com/quadule/digest-cmac since it's not a gem. I use this
+Copied from https://github.com/quadule/digest-cmac since it's not a gem.
 
 ## Installation
 
