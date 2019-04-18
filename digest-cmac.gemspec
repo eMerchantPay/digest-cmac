@@ -12,15 +12,6 @@ Gem::Specification.new do |spec|
   spec.description   = 'CMAC algorithm'
   spec.homepage      = 'https://emp-sof-github01.emp.internal.com/eMerchantPay/digest-cmac'
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = 'DO_NOT_ALLOW_TO_PUSH_TO_ANY_GEMSERVER'
-  else
-    raise 'RubyGems 2.0 or newer is required to protect against ' \
-      'public gem pushes.'
-  end
-
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
